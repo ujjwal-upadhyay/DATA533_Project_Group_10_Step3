@@ -20,27 +20,41 @@ class Inventory():
         
 #search inventory
     def get_inventory(self):
-        for key in self.dict:
-            self.dict[key].get_inventory()
-        return self.dict
+        try:
+            for key in self.dict:
+                self.dict[key].get_inventory()
+        except:
+            print('sth wrong')
+        else:
+            return self.dict
+
 
 #query the price of fruit according to the name of the fruit
     def get_price(self,name):
-        if name in self.dict:
-            return self.dict[name].get_price()
-        else:
-            print("Sorry, we don't have this kind of fruit.")
+        try:
+            if name in self.dict:
+                return self.dict[name].get_price()
+            else:
+                print("Sorry, we don't have this kind of fruit.")
+        except:
+            print('sth wrong')
 
 #search discount according to fruits' name
     def get_discount(self,name):
-        if name in self.dict:
-            return self.dict[name].get_discount()
-        else:
-            print("Sorry, we don't have this kind of fruit.")
-
+        try:
+            if name in self.dict:
+                return self.dict[name].get_discount()
+            else:
+                print("Sorry, we don't have this kind of fruit.")
+        except:
+            print('sth wrong')
 # query all inventory and sort by price
     def get_sort_price(self):
-        d_order = sorted(self.dict.items(), key=lambda x:x[1].price, reverse=False)
+        try:
+            d_order = sorted(self.dict.items(), key=lambda x:x[1].price, reverse=False)
+    except:
+        print('sth wrong')
+    else:
         for key in d_order:
             print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
         return self.dict

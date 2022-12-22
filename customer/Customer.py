@@ -18,8 +18,15 @@ class Customer():
 # purchase list  
     def items_detail(self):
         print('Purchase List：')
-        for name in self.items:
-            print(f' {name},{self.items[name]}')
+        try:
+            if not self.items:
+                raise ValueError("no items")
+            for name in self.items:
+                print(f' {name},{self.items[name]}')
+        except ValueError as ex:
+            print(ex)
+        except:
+            print(ex)
 
 # store-purchased fruits 
     def get_items(self):
