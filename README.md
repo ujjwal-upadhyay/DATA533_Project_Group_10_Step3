@@ -30,3 +30,5 @@ Our project topic is Fruits Purchase System. We create two sub-packages named as
 * get_discount() - This function will return the discount price of the fruit from the inventory.
 * get_sort_price() - This function will return the sorted list of the items purchased by the customer.
 * get_expiry() - This function will call the Fruit module method and display the expiry dates for given fruit.
+
+#### Description vedio link: https://youtu.be/afHm1F9GPmU
