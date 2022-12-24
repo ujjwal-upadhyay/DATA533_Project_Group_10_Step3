@@ -1,4 +1,8 @@
-from produce.Fruit import Apple, Banana, Pear, Orange, Grape
+import sys
+
+sys.path.append("..")
+
+from produce.fruit import Apple, Banana, Pear, Orange, Grape
 
 class Inventory():
     def __init__(self):
@@ -52,12 +56,12 @@ class Inventory():
     def get_sort_price(self):
         try:
             d_order = sorted(self.dict.items(), key=lambda x:x[1].price, reverse=False)
-    except:
-        print('sth wrong')
-    else:
-        for key in d_order:
-            print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
-        return self.dict
+        except:
+            print('sth wrong')
+        else:
+            for key in d_order:
+                print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
+            return self.dict
 
     def get_expiry(self):
         for key in self.dict:

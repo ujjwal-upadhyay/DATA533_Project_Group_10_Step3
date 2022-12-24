@@ -1,4 +1,8 @@
-from ..produce.inventory import Inventory
+import sys
+
+sys.path.append("..")
+
+from produce.inventory import Inventory
 
 #Inherit Inventory
 class Search(Inventory):
@@ -26,6 +30,7 @@ class Search(Inventory):
             print('there is no items!')
         except:
             print('sth wrong')
+
     def get_current_price(self):
         all_price = 0
         items = self.customer.get_items()
