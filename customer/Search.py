@@ -26,8 +26,8 @@ class Search(Inventory):
                 self.dict[name].advertise()
             print('Have a nice day!')
             return all_price
-    except existError:
-        print('there is no items!')
+        except existError:
+            print('there is no items!')
     except:
         print('sth wrong')
     def get_current_price(self):
