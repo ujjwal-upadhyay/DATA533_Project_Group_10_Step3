@@ -4,6 +4,8 @@
 
 [![Build Status](https://app.travis-ci.com/ujjwal-upadhyay/DATA533_Project_Group_10_Step3.svg?branch=main)](https://app.travis-ci.com/ujjwal-upadhyay/DATA533_Project_Group_10_Step3)
 
+*PyPi Link - https://pypi.org/project/fruit-purchase-UX/*
+
 ### 1. Description of the package
 Our project topic is Fruits Purchase System. We create two sub-packages named as customer and produce. The main modules in these sub-packages are Customer.py, which manages customers’ purchasing needs. Search.py is used for customers to search for fruits’ storage, price, and notification words. Fruits.py is used to set different fruits' information, like price, discount, inventory and expiry time. Inventory.py are used for record the fruits’ inventory information.
 
