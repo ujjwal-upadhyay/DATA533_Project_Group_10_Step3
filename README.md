@@ -32,3 +32,5 @@ Our project topic is Fruits Purchase System. We create two sub-packages named as
 * get_expiry() - This function will call the Fruit module method and display the expiry dates for given fruit.
 
 #### Description vedio link: https://youtu.be/afHm1F9GPmU
+
+[![Build Status](https://app.travis-ci.com/ujjwal-upadhyay/DATA533_Project_Group_10_Step3.svg?branch=main)](https://app.travis-ci.com/ujjwal-upadhyay/DATA533_Project_Group_10_Step3)
