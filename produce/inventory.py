@@ -58,10 +58,10 @@ class Inventory():
             d_order = sorted(self.dict.items(), key=lambda x:x[1].price, reverse=False)
         except:
             print('sth wrong')
-    else:
-        for key in d_order:
-            print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
-        return self.dict
+        else:
+            for key in d_order:
+                print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
+            return self.dict
 
     def get_expiry(self):
         for key in self.dict:
