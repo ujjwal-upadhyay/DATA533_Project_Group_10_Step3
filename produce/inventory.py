@@ -56,8 +56,8 @@ class Inventory():
     def get_sort_price(self):
         try:
             d_order = sorted(self.dict.items(), key=lambda x:x[1].price, reverse=False)
-    except:
-        print('sth wrong')
+        except:
+            print('sth wrong')
     else:
         for key in d_order:
             print(f'fruit {key[1].name}, inventory {key[1].inventory}, price {key[1].price}')
