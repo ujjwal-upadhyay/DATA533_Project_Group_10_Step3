@@ -28,8 +28,13 @@ class Search(Inventory):
             return all_price
         except existError:
             print('there is no items!')
+<<<<<<< HEAD
     except:
         print('sth wrong')
+=======
+        except:
+            print('sth wrong')
+>>>>>>> main
     def get_current_price(self):
         all_price = 0
         items = self.customer.get_items()
