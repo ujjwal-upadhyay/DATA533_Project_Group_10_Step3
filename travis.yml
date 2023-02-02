@@ -5,4 +5,4 @@ python:
   - "3.8"
 # command to run tests
 script:
-  - python test_suite.py
+  - python Testfunctions.py
